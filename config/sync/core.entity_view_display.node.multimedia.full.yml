@@ -1,30 +1,23 @@
-uuid: 32b48966-e5f8-4885-adf4-1d938c90d625
+uuid: f7b3d5b7-b201-40ff-8483-b68453958256
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.multimedia.body
     - field.field.node.multimedia.field_imagen
     - field.field.node.multimedia.field_nombre
     - node.type.multimedia
   module:
     - image
-    - text
     - user
-id: node.multimedia.default
+id: node.multimedia.full
 targetEntityType: node
 bundle: multimedia
-mode: default
+mode: full
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_imagen:
-    weight: 102
+    weight: 0
     label: above
     settings:
       image_style: ''
@@ -33,16 +26,13 @@ content:
     type: image
     region: content
   field_nombre:
-    weight: 103
+    weight: 1
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  links: true

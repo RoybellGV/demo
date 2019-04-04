@@ -5,26 +5,34 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.multimedia.body
+    - field.field.node.multimedia.field_imagen
+    - field.field.node.multimedia.field_nombre
     - node.type.multimedia
   module:
-    - text
+    - image
     - user
 id: node.multimedia.teaser
 targetEntityType: node
 bundle: multimedia
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+  field_imagen:
+    type: image
+    weight: 0
+    region: content
+    label: above
     settings:
-      trim_length: 600
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
+  field_nombre:
+    type: string
+    weight: 1
     region: content
-  links:
-    weight: 100
-    settings: {  }
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  links: true
