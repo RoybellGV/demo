@@ -1,0 +1,15 @@
+uuid: a9cbdd4f-e25a-40cf-91b7-942491c18306
+langcode: en
+status: true
+dependencies: {  }
+name: imagen01
+label: Imagen01
+effects:
+  54ab0eb8-ea44-4e01-b3fb-3fe61685fc47:
+    uuid: 54ab0eb8-ea44-4e01-b3fb-3fe61685fc47
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: 1280
+      upscale: false

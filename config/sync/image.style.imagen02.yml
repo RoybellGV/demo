@@ -1,0 +1,15 @@
+uuid: 141189d8-3c1f-431f-909a-e0dbad78ce08
+langcode: en
+status: true
+dependencies: {  }
+name: imagen02
+label: Imagen02
+effects:
+  67f7ce16-c45b-4f06-bc4b-af3298a2364d:
+    uuid: 67f7ce16-c45b-4f06-bc4b-af3298a2364d
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      upscale: false
