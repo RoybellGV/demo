@@ -1,0 +1,22 @@
+uuid: 31ce83e7-dba1-46d3-956f-73815900a481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.multimedia
+  module:
+    - text
+id: node.multimedia.body
+field_name: body
+entity_type: node
+bundle: multimedia
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

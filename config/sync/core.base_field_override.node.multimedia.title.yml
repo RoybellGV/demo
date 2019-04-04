@@ -1,0 +1,18 @@
+uuid: c29b1a5b-bd03-4462-af54-c834d9beae67
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.multimedia
+id: node.multimedia.title
+field_name: title
+entity_type: node
+bundle: multimedia
+label: Imagen
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

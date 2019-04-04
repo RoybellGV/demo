@@ -1,0 +1,48 @@
+uuid: 32b48966-e5f8-4885-adf4-1d938c90d625
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.multimedia.body
+    - field.field.node.multimedia.field_imagen
+    - field.field.node.multimedia.field_nombre
+    - node.type.multimedia
+  module:
+    - image
+    - text
+    - user
+id: node.multimedia.default
+targetEntityType: node
+bundle: multimedia
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nombre:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
