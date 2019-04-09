@@ -8,11 +8,11 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large
     - node.type.article
+    - responsive_image.styles.prueba
   module:
     - comment
-    - image
+    - responsive_image
     - text
     - user
 _core:
@@ -39,11 +39,11 @@ content:
       pager_id: 0
     third_party_settings: {  }
   field_image:
-    type: image
+    type: responsive_image
     weight: -1
     region: content
     settings:
-      image_style: large
+      responsive_image_style: prueba
       image_link: ''
     third_party_settings: {  }
     label: hidden

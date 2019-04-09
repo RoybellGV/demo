@@ -1,0 +1,12 @@
+uuid: 773e43bb-6d32-47e1-b59f-16e9d6d7c6f8
+langcode: en
+status: true
+dependencies: {  }
+id: pruba
+label: 'Form de prueba'
+recipients:
+  - roygueve@gmail.com
+reply: ''
+weight: 0
+message: 'Gracias por llenar este formulario'
+redirect: /node/1

@@ -1,0 +1,31 @@
+uuid: ee7df926-e583-4520-8ace-9414d7e93291
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.pruba
+    - field.field.contact_message.pruba.field_cv
+  module:
+    - file
+id: contact_message.pruba.default
+targetEntityType: contact_message
+bundle: pruba
+mode: default
+content:
+  field_cv:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
