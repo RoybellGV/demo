@@ -24,6 +24,7 @@
         "drupal/business": "^1.7",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
+        "drupal/devel": "^2.0",
         "drupal/drupal8_zymphonies_theme": "^1.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
